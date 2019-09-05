@@ -4,9 +4,7 @@ namespace DOFCalculator.Client.Models
 {
     public class ApertureDictionary : Dictionary<string, double>
     {
-        public ApertureDictionary Default()
-        {
-            return new ApertureDictionary
+        public static ApertureDictionary Default => new ApertureDictionary
             {
                 {"f/1",     1},
                 {"f/1.2",   1.189207115},
@@ -22,6 +20,5 @@ namespace DOFCalculator.Client.Models
                 {"f/22",    22.6},
                 {"f/32",    32.0}
             };
-        }
     }
 }
