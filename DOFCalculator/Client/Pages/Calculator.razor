@@ -1,0 +1,10 @@
+﻿@page "/"
+
+<h1>Depth of Field Calculator</h1>
+
+<select>
+    @foreach (var camera in DOFCalculator.Client.Models.CameraSensorTypeDictionary.Default)
+    {
+        <option value=@camera.Value>@camera.Key</option>
+    }
+</select>
