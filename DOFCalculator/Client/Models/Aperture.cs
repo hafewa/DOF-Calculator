@@ -2,9 +2,9 @@
 
 namespace DOFCalculator.Client.Models
 {
-    public class ApertureDictionary : Dictionary<string, double>
+    public class Aperture : Dictionary<string, double>
     {
-        public static ApertureDictionary Default => new ApertureDictionary
+        public static Aperture Default => new Aperture
             {
                 {"f/1",     1},
                 {"f/1.2",   1.189207115},
