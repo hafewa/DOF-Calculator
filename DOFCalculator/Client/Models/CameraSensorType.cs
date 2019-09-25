@@ -3,9 +3,9 @@ using UnitsNet;
 
 namespace DOFCalculator.Client.Models
 {
-    public class CameraSensorTypeDictionary : Dictionary<string, UnitsNet.Length>
+    public class CameraSensorType : Dictionary<string, Length>
     {
-        public static CameraSensorTypeDictionary Default => new CameraSensorTypeDictionary
+        public static CameraSensorType Default => new CameraSensorType
         {
             { "Full-Frame Camera",                  Length.FromMillimeters(0.030) },
             { "APS-C 1.6x Crop (Canon)",            Length.FromMillimeters(0.019) },
